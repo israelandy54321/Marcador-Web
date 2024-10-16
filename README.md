@@ -17,3 +17,6 @@ docker-compose.yml: Archivo de configuración para Docker Compose.
 Construcción de la Imagen: Utiliza un Dockerfile para construir la imagen del servidor Node.js que manejará la lógica de la aplicación.
 Configuración del Entorno: Al definir las dependencias en package.json, se asegura de que cualquier contenedor que se construya tendrá todo lo necesario para funcionar.
 Orquestación de Servicios: Si en el futuro decide agregar una base de datos o un frontend separado, puede usar docker-compose.yml para configurar cómo se comunican estos contenedores entre sí.
+
+
+docker-compose up --build
