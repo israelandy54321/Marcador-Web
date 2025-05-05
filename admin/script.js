@@ -5,9 +5,21 @@ function iniciarReloj() {
     socket.emit('iniciarReloj');
 }
 
+function pausarReloj() {
+    socket.emit('pausarReloj');
+}
+
+
 function reiniciarReloj() {
     socket.emit('reiniciarReloj');
 }
+
+function reiniciarSistema() {
+    if (confirm("¿Estás seguro de que quieres reiniciar todo el marcador?")) {
+      socket.emit('reiniciarSistema');
+    }
+  }
+  
 
 function iniciarRelojDesde() {
     const minutos = document.getElementById('tiempoMinutos').value;
